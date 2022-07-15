@@ -36,11 +36,10 @@ export const searchRepositories = (text: string) => {
           }
         }
       );
+      console.log(data);
 
       const result = data.objects.map(
-        (npmPackage: { package: { name: string } }) => {
-          return result.push(npmPackage.package.name);
-        }
+        (npmPackage: { package: { name: string } }) => npmPackage.package.name
       );
 
       dispatch({
