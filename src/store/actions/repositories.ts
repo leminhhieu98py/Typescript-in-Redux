@@ -46,10 +46,10 @@ export const searchRepositories = (text: string) => {
         type: REPOSITORIES_ACTION_TYPES.SEARCH_REPOSITORIES_SUCESS,
         payload: result
       });
-    } catch (err) {
+    } catch (err: any) {
       dispatch({
         type: REPOSITORIES_ACTION_TYPES.SEARCH_REPOSITORIES_ERROR,
-        payload: 'err.message'
+        payload: err.message
       });
     }
   };
