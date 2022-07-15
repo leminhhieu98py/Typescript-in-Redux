@@ -1,5 +1,5 @@
-import { Action } from './action';
-import { REPOSITORIES_ACTION_TYPES } from './action.type';
+import { Action } from '../actions/repositories';
+import { REPOSITORIES_ACTION_TYPES } from '../action.types/repositories';
 
 interface RepositoriesState {
   isLoading: boolean;
